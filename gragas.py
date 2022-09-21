@@ -156,22 +156,22 @@ def make_legs(daddy6):
     daddy6.goto(50, -75)
     daddy6.goto(100, -75)
     daddy6.end_fill()
+    daddy6.hideturtle()
 
+trtl_list = []
+for i in range(6):
+    temp_turt = trtl.Turtle(shape="square")
+    trtl_list.append(temp_turt)
 
-
-t1 = trtl.Turtle(shape="square")
-t2 = trtl.Turtle(shape="triangle")
-t3 = trtl.Turtle(shape="turtle")
-t4 = trtl.Turtle(shape="square")
-t5 = trtl.Turtle(shape="turtle")
-t6 = trtl.Turtle(shape="triangle")
-
-make_legs(t6)
-make_arms(t1)
-make_stomach(t2)
-make_head(t3)
-make_pants(t4)
-make_casket(t5)
+i = 1
+print(trtl_list)
+if i == 1:
+    make_legs(trtl_list[0])
+    make_arms(trtl_list[1])
+    make_stomach(trtl_list[2])
+    make_head(trtl_list[3])
+    make_pants(trtl_list[4])
+    make_casket(trtl_list[5])
 
 
 wn = trtl.Screen()
